@@ -8,4 +8,15 @@ class ProductController extends Controller
     {
         return view( 'js.js' );
     }
+
+    public function add()
+    {
+        return view( 'products.add' );
+    }
+
+    public function calculator()
+    {
+        return view( 'calculator' );
+    }
+
 }

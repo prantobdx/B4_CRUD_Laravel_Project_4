@@ -50,7 +50,7 @@ samllImage3.onclick = function ()
 }
 
 var samllImage4 = document.getElementById('samllImage4');
-samllImage3.onclick = function () 
+samllImage4.onclick = function () 
 {
     var imgUrl = samllImage4.getAttribute('src');
     mainImage.setAttribute('src',imgUrl);   

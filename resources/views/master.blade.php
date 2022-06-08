@@ -7,6 +7,9 @@
     <title>@yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('/') }}assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('/') }}assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="{{ asset('/') }}assets/css/style.css">
+
 </head>
 <body>
    
@@ -17,5 +20,6 @@
 
     <script src="{{ asset('/') }}assets/js/jquery-3.6.0.min.js"></script>
     <script src="{{ asset('/') }}assets/js/bootstrap.bundle.js"></script>
+    
 </body>
 </html>

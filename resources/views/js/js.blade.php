@@ -8,6 +8,7 @@ Java Script
 
 
 @include('includes/image-change')
+
 @include('includes/color-change')
 
 <h1 id="h1"></h1>
