@@ -21,6 +21,12 @@ Route::get( '/', function ()
 
 Route::get( '/', [ProductController::class, 'js'] )->name( 'js' );
 
+Route::get( '/add', [ProductController::class, 'add'] )->name( 'add-product' );
+
+Route::get( '/my-calculator', [ProductController::class, 'calculator'] )->name( 'my-calculator' );
+
+// done c:34
+
 // c:33 done
 
 //c:32 done
