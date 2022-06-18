@@ -7,6 +7,8 @@
     <title>@yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('/') }}assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('/') }}assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <link rel="stylesheet" href="{{ asset('/') }}assets/css/style.css">
 
@@ -20,6 +22,12 @@
 
     <script src="{{ asset('/') }}assets/js/jquery-3.6.0.min.js"></script>
     <script src="{{ asset('/') }}assets/js/bootstrap.bundle.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js""></script>
+
+    @if(Session::has('message'))
+    <script>
+        toastr.success("{{ Session::get('message') }}");
+    </script>
+    @endif
 </body>
 </html>

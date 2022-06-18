@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
-        <a href="" class="navbar-brand" >Logo</a>
+        <a href="{{ url('/') }}" class="navbar-brand" >Logo</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse"  data-target="#menu">
         <span class="navbar-toggler-icon"></span>    
         </button> 
@@ -9,9 +9,13 @@
 
                     <li class="navbar-item"><a href="{{ route('js')  }}" class="nav-link">JavaScript</a></li>
 
-                    <li class="navbar-item"><a href="{{ route('add-product') }}" class="nav-link">Add Product</a></li> 
+                    <li class="navbar-item"><a href="{{ route('add-fullname') }}" class="nav-link">Add FullName</a></li> 
 
                     <li class="navbar-item"> <a href="{{ route('my-calculator') }}" class="nav-link">My Calculator</a></li>
+
+                    <li class="navbar-item"> <a href="{{ route('add-products') }}" class="nav-link">Add Products</a></li>
+
+                    <li class="navbar-item"> <a href="{{ route('manage-product') }}" class="nav-link">Manage Product</a></li>
 
                 </ul>
             </div>
