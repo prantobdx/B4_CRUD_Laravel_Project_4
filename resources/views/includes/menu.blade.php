@@ -17,6 +17,10 @@
 
                     <li class="navbar-item"> <a href="{{ route('manage-product') }}" class="nav-link">Manage Product</a></li>
 
+                    <li class="navbar-item"><a href="{{ route('add-product') }}" class="nav-link">Add Product</a></li> 
+
+                    <li class="navbar-item"> <a href="{{ route('my-calculator') }}" class="nav-link">My Calculator</a></li>
+
                 </ul>
             </div>
     </div>

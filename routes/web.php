@@ -25,6 +25,10 @@ Route::get( '/add-fullname', [ProductController::class, 'addFullName'] )->name( 
 
 Route::get( '/my-calculator', [ProductController::class, 'calculator'] )->name( 'my-calculator' );
 
+Route::get( '/add', [ProductController::class, 'add'] )->name( 'add-product' );
+
+Route::get( '/my-calculator', [ProductController::class, 'calculator'] )->name( 'my-calculator' );
+
 Route::get( '/add-products', [ProductController::class, 'addProducts'] )->name( 'add-products' );
 
 //Product Crud..................
@@ -44,7 +48,7 @@ Route::get( '/edit-product/{productId}', [ProductController::class, 'editProduct
 
 // c:35 done
 
-// c:34 done
+//  c:34 done
 
 // c:33 done
 

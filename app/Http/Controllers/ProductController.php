@@ -20,11 +20,16 @@ class ProductController extends Controller
         return view( 'products.addFullName' );
     }
 
+    public function add()
+    {
+        return view( 'products.add' );
+
+    }
+
     public function calculator()
     {
         return view( 'calculator' );
     }
-
     public function addProducts()
     {
         return view( 'products.add_products' );
@@ -99,4 +104,5 @@ class ProductController extends Controller
         Product::updateData( $request );
         return redirect( '/manage-product' )->with( 'message', 'Product Updated Sucessfully' );
     }
+
 }
